@@ -1,6 +1,9 @@
+import "../scss/styles.scss";
+import * as bootstrap from 'bootstrap'
 import {addNumber} from './sum'
 import {divideNumbers} from './division'
 import {buttonClickAction} from './events'
+
 
 
 document.querySelector('button').addEventListener('click', (evt) => buttonClickAction(evt))
