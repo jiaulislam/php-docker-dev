@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  web:
+    image: nginx:1.23-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./app:/app
+
+  php:
+    image: php:8.1-fpm-alpine
+    volumes:
+      - ./app:/app
