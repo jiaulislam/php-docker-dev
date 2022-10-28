@@ -8438,56 +8438,6 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
-/***/ }),
-
-/***/ "./src/js/division/index.js":
-/*!**********************************!*\
-  !*** ./src/js/division/index.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "divideNumbers": () => (/* binding */ divideNumbers)
-/* harmony export */ });
-function divideNumbers(number1, number2) {
-    return number1 / number2
-}
-
-/***/ }),
-
-/***/ "./src/js/events/index.js":
-/*!********************************!*\
-  !*** ./src/js/events/index.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "buttonClickAction": () => (/* binding */ buttonClickAction)
-/* harmony export */ });
-function buttonClickAction(evt) {
-    console.log(evt.altitudeAngle);
-    console.log(evt);
-    console.log(`BUTTON WAS CLICKED AT -> ${evt.target}`)
-}
-
-/***/ }),
-
-/***/ "./src/js/sum/index.js":
-/*!*****************************!*\
-  !*** ./src/js/sum/index.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "addNumber": () => (/* binding */ addNumber)
-/* harmony export */ });
-function addNumber(number1, number2) {
-    return number1 + number2;
-}
-
 /***/ })
 
 /******/ 	});
@@ -8555,20 +8505,28 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/styles.scss */ "./src/scss/styles.scss");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sum */ "./src/js/sum/index.js");
-/* harmony import */ var _division__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./division */ "./src/js/division/index.js");
-/* harmony import */ var _events__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./events */ "./src/js/events/index.js");
 
 
 
-
-
-
-
-
-document.querySelector('button').addEventListener('click', (evt) => (0,_events__WEBPACK_IMPORTED_MODULE_4__.buttonClickAction)(evt))
-console.log((0,_sum__WEBPACK_IMPORTED_MODULE_2__.addNumber)(1,1));
-console.log((0,_division__WEBPACK_IMPORTED_MODULE_3__.divideNumbers)(5,6));
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+    console.log(forms);
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
 })();
 
 /******/ })()

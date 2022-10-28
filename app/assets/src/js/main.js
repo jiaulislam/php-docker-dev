@@ -1,11 +1,22 @@
 import "../scss/styles.scss";
 import * as bootstrap from 'bootstrap'
-import {addNumber} from './sum'
-import {divideNumbers} from './division'
-import {buttonClickAction} from './events'
 
-
-
-document.querySelector('button').addEventListener('click', (evt) => buttonClickAction(evt))
-console.log(addNumber(1,1));
-console.log(divideNumbers(5,6));
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+    console.log(forms);
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()

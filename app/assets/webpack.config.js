@@ -6,12 +6,13 @@ module.exports = {
   devtool: false,
   entry: "./src/js/main.js",
   output: {
-    filename: "main.js",
+    filename: "js/main.js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
     new MiniCssExtractPlugin({
       linkType: "text/css",
+      filename: "css/styles.css"
     }),
   ],
   module: {
