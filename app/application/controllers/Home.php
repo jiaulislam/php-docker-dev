@@ -5,6 +5,10 @@ class Home extends CIController {
 
 	public function index()
 	{
-		$this->load->view('home_view');
+		$data['payloads'] = (object) array(
+			'name' => "Jiaul Islam",
+			'mobileNo' => "01778625131"
+		);
+		$this->load->view('home_view', $data);
 	}
 }

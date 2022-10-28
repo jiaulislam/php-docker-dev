@@ -11,7 +11,9 @@
 <body>
     <div id="section_main">
         <div id="content">
+            <?php include_once  APPPATH . 'views/partials/_navbar.php'; ?>
             <?php echo $content; ?>
+            <?php include_once APPPATH . 'views/partials/_footer.php'; ?>
         </div>
     </div>
     <script src="../../assets/dist/js/main.js"></script>
