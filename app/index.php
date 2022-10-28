@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Webpack</title>
+    <link rel="stylesheet" href="./assets/dist/main.css">
   </head>
   <body>
     <?php include_once 'assets/templates/layout/header.php'?>
