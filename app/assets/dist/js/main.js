@@ -9768,7 +9768,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1667027047271
+      // 1667029833315
       var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -12105,7 +12105,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.hu = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + __webpack_require__.h() + ".hot-update.js";
+/******/ 			return "hot/hot-update.js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -12120,12 +12120,12 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("main." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("hot/hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("f52bb6e537aaec53e238")
+/******/ 		__webpack_require__.h = () => ("312558a609595126e6c1")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

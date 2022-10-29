@@ -9,6 +9,8 @@ module.exports = {
   output: {
     filename: "js/main.js",
     path: path.resolve(__dirname, "dist"),
+    hotUpdateChunkFilename: 'hot/hot-update.js',
+    hotUpdateMainFilename: 'hot/hot-update.json'
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -16,7 +18,9 @@ module.exports = {
       filename: "css/styles.css"
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, '../index.php')
+      template: path.join(__dirname, '/src/index.php'), 
+      chunks: ['index'],
+      filename: 'index.php',
     })
   ],
   devServer: {
@@ -32,7 +36,7 @@ module.exports = {
       }
     },
     devMiddleware: {
-      publicPath: path.resolve(__dirname, 'dist'),
+      publicPath: path.resolve(__dirname, '../'),
       serverSideRender: true,
       writeToDisk: true,
     },

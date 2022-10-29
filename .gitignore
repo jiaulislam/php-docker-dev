@@ -1,3 +1,4 @@
 **/node_modules
 app/assets/dist/*.woff2
 app/assets/dist/*.ttf
+**/hot/**
