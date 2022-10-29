@@ -18,7 +18,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.s[ac]ss$/i,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           {
@@ -38,11 +38,12 @@ module.exports = {
         ],
       },
       // {
-      //   test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+      //   test: /\.(eot|otf|ttf|woff|woff2)(\?.*)?$/,
       //   use: {
       //     loader: 'file-loader',
       //     options: {
-      //       name: 'fonts/[name].[ext]',
+      //       outputPath: 'fonts',
+      //       name: '[name].[ext]',
       //     },
       //   },
       // },
