@@ -1,16 +1,14 @@
-@use 'custom';
-$fa-font-path:   "@fortawesome/fontawesome-free/fonts/" !default;
+@use "custom";
+$fa-font-path: "@fortawesome/fontawesome-free/fonts/" !default;
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
-
 body {
-    font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .brand {
-    
-    p {
-        font-family: 'Roboto', sans-serif !important;
-        font-weight: 700;
-    }
+  p {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700;
+  }
 }
